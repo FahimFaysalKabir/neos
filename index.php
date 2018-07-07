@@ -6,18 +6,18 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Neos &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+	<title><?php bloginfo('name');?>|<?php bloginfo('description');?> </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
 	<meta name="author" content="FREEHTML5.CO" />
 
-  <!-- 
+  <!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -41,25 +41,25 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="href="<?php bloginfo('template_url'); ?>/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
 
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/respond.min.js"></script>
 	<![endif]-->
 
 	</head>
@@ -80,10 +80,10 @@
 			</nav>
 		</div>
 	</header>
-	
+
 	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
-		<div class="item"><a href="images/featured-1.jpg" class="image-popup"><img src="images/featured-1.jpg" alt="image"></a></div>
-		<div class="item"><a href="images/featured-2.jpg" class="image-popup"><img src="images/featured-2.jpg" alt="image"></a></div>
+		<div class="item"><a href="<?php echo get_template_directory_uri(); ?>/images/featured-1.jpg" class="image-popup"><img src="<?php echo get_template_directory_uri(); ?>/images/featured-1.jpg" alt="image"></a></div>
+		<div class="item"><a href="<?php echo get_template_directory_uri(); ?>/images/featured-2.jpg" class="image-popup"><img src="<?php echo get_template_directory_uri(); ?>/images/featured-2.jpg" alt="image"></a></div>
 	</div>
 
 	<div id="fh5co-intro-section">
@@ -121,7 +121,7 @@
 			</div>
 		</div>
 	</div><!-- end fh5co-common-section -->
-	<div class="fh5co-parallax" style="background-image: url(images/hero-1.jpg);" data-stellar-background-ratio="0.5">
+	<div class="fh5co-parallax" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hero-1.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -178,7 +178,7 @@
 
 				<div class="col-md-4 text-center">
 					<div class="fhco-hero2">
-						<img class="img-responsive" src="images/iphone6.png" alt="iphone6">
+						<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/images/iphone6.png" alt="iphone6">
 					</div>
 				</div>
 
@@ -228,7 +228,7 @@
 			<div class="owl-carousel owl-carousel2">
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic1.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic1.jpg" alt="image">
 					<a href="#" class="pop-up-overlay text-center">
 						<div class="desc">
 							<h3>Camera</h3>
@@ -237,7 +237,7 @@
 					</a>
 				</div>
 				<div class="item">
-					<img src="images/portfolio_pic2.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic2.jpg" alt="image">
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-2 text-center">
 						<div class="desc">
 							<h3>Workstation</h3>
@@ -247,7 +247,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic3.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic3.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-3 text-center">
 						<div class="desc">
@@ -258,7 +258,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic4.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic4.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-4 text-center">
 						<div class="desc">
@@ -269,7 +269,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic5.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic5.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay text-center">
 						<div class="desc">
@@ -280,7 +280,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic6.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic6.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-2 text-center">
 						<div class="desc">
@@ -291,7 +291,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic7.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic7.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay text-center">
 						<div class="desc">
@@ -302,7 +302,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic8.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic8.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-3 text-center">
 						<div class="desc">
@@ -313,7 +313,7 @@
 				</div>
 				<div class="item">
 					<!-- <a href="#" class="image-popup"> -->
-					<img src="images/portfolio_pic9.jpg" alt="image">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/portfolio_pic9.jpg" alt="image">
 					<!-- </a> -->
 					<a href="#" class="pop-up-overlay pop-up-overlay-color-4 text-center">
 						<div class="desc">
@@ -352,7 +352,7 @@
 			</div>
 		</div>
 	</div><!-- end: fh5co-blog-section -->
-	<div class="fh5co-parallax" style="background-image: url(images/hero-2.jpg);" data-stellar-background-ratio="0.5">
+	<div class="fh5co-parallax" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/hero-2.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -383,21 +383,20 @@
 	</footer>
 
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.waypoints.min.js"></script>
 	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/owl.carousel.min.js"></script>
 	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/jquery.stellar.min.js"></script>
 
 	<!-- Main JS (Do not remove) -->
-	<script src="js/main.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
 
 	</body>
 </html>
-
